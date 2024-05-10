@@ -31,29 +31,34 @@ services:
   client_config: {}
   server_config: {}
 cta: {preset: feedback_form_welcome}
+startup: null
 package_name: Feedback_Form_1
 allow_embedding: false
-name: Feedback Form 1
+name: Membership Form
 runtime_options: {version: 2, server_version: python3-sandbox, client_version: '3',
   server_spec: null}
-metadata: {}
-startup_form: HomeForm
+metadata: {title: Join our Gym For your personal fitness, description: Gym Membership Website,
+  logo_img: 'asset:imagesGymlogo.jpeg'}
+startup_form: Form1
 db_schema:
-  feedback:
+  gym:
     client: none
     server: full
     columns:
-    - name: name
+    - name: 'Address '
+      admin_ui: {order: 0, width: 200}
+      type: string
+    - name: Name
       admin_ui: {width: 200, order: 0}
       type: string
-    - name: email
+    - name: Weight
       admin_ui: {width: 200, order: 1}
-      type: string
-    - name: feedback
+      type: number
+    - name: Mobile no.
       admin_ui: {width: 200, order: 2}
-      type: string
-    - name: created
+      type: number
+    - name: 'Personal Training '
       admin_ui: {width: 200, order: 3}
-      type: datetime
-    title: Feedback
+      type: bool
+    title: Gym
 renamed: true

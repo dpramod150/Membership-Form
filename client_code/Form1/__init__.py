@@ -18,9 +18,9 @@ class Form1(Form1Template):
     name = self.text_box_1.text
     weight = int(self.text_box_2.text)
     address = self.text_box_3.text
-    mobile_no = int(self.text_box_4.text)
-    personal_training  = self.check_box_1.checked
-    anvil.server.call('submit', name=name, weight=weight, address=address, mobile_no = mobile_no, personal_training =personal_training, )
+    mobileNo = int(self.text_box_4.text)
+    personaltraining  = self.check_box_1.checked
+    anvil.server.call('submit', name=name, weight=weight, address=address, mobileNo = mobileNo, personaltraining =personaltraining)
     Notification("Your response has been recorded").show()
 
   def text_box_4_pressed_enter(self, **event_args):

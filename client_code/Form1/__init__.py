@@ -21,7 +21,7 @@ class Form1(Form1Template):
     mobileNo = int(self.text_box_4.text)
     personaltraining  = self.check_box_1.checked
     anvil.server.call('submit', name=name, weight=weight, mobileNo = mobileNo, personaltraining =personaltraining)
-    Notification("Your response has been recorded").show()
+    Notification("Your response has been recorded, We will contact soon.").show()
 
   def text_box_4_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""

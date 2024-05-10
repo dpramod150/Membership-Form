@@ -45,20 +45,20 @@ db_schema:
     client: none
     server: full
     columns:
-    - name: 'Address '
+    - name: 'address '
+      admin_ui: {order: 0.5, width: 200}
+      type: string
+    - name: name
       admin_ui: {order: 0, width: 200}
       type: string
-    - name: Name
-      admin_ui: {width: 200, order: 0}
-      type: string
-    - name: Weight
-      admin_ui: {width: 200, order: 1}
+    - name: weight
+      admin_ui: {order: 1, width: 200}
       type: number
-    - name: Mobile no.
-      admin_ui: {width: 200, order: 2}
+    - name: mobile_no.
+      admin_ui: {order: 2, width: 200}
       type: number
-    - name: 'Personal Training '
-      admin_ui: {width: 200, order: 3}
+    - name: 'personal_training '
+      admin_ui: {order: 3, width: 200}
       type: bool
     title: Gym
 renamed: true

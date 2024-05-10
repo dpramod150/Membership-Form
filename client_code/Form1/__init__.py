@@ -16,9 +16,13 @@ class Form1(Form1Template):
   def primary_color_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     name = self.text_box_1.text
-    weight = self.text_box_2.number
+    weight = int(self.text_box_2.text)
     address = self.text_box_3.text
-    mobile_no = self.text_box_4.number
+    mobile_no = int(self.text_box_4.text)
     personal_training  = self.check_box_1.checked
-    anvil.server.call('submit', name=name, weight=weight, address=address, mobile_no = mobile_no, personal=personal, )
-    anvil.server.anvil.Notification (message, (title""), {})
+    anvil.server.call('submit', name=name, weight=weight, address=address, mobile_no = mobile_no, personal_training =personal_training, )
+    Notification("Your response has been recorded").show()
+
+  def text_box_4_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    pass

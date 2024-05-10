@@ -1,7 +1,7 @@
 container:
   type: ColumnPanel
   properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-    wrap_on: mobile, col_spacing: small, spacing_above: small, col_widths: '{"OSHGTL":25,"REDYRN":35,"ZWNWGM":20,"VECYCY":40}',
+    wrap_on: mobile, col_spacing: small, spacing_above: small, col_widths: '{"OSHGTL":25,"REDYRN":35,"ZWNWGM":20,"VECYCY":55,"NGTPPD":15}',
     spacing_below: small, background: ''}
   data_bindings: []
 components:
@@ -74,22 +74,6 @@ components:
   layout_properties: {grid_position: 'KMMRJJ,VECYCY VPTUGZ,VFJLCV', full_width_row: false,
     row_background: ''}
   data_bindings: []
-- type: Label
-  properties: {role: input-prompt, align: left, tooltip: '', border: '', foreground: '',
-    visible: true, text: 'Enter Your Address:', font_size: null, font: '', spacing_above: small,
-    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-    underline: false, icon: ''}
-  name: label_3
-  layout_properties: {grid_position: 'KMMRJJ,VECYCY CQVIPJ,OAOEYK', full_width_row: false,
-    row_background: ''}
-- type: TextBox
-  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-    border: '', enabled: true, foreground: '', visible: true, text: Your address,
-    font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-    italic: false, background: '', bold: false, underline: false}
-  name: text_box_3
-  layout_properties: {grid_position: 'KMMRJJ,VECYCY OAMVIL,GIMAVC', full_width_row: false,
-    row_background: ''}
 - type: Label
   properties: {role: input-prompt, align: left, tooltip: '', border: '', foreground: '',
     visible: true, text: Enter Your Mobile No., font_size: null, font: '', spacing_above: small,

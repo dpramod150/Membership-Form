@@ -1,3 +1,4 @@
+import anvil.users
 import anvil.email
 import anvil.tables as tables
 import anvil.tables.query as q
@@ -17,5 +18,7 @@ import anvil.server
 #   return 42
 #
 @anvil.server.callable
-def submit(name, weight, address, mobileNo, personaltraining):
- app_tables.gym.add_row(name=name, weight=weight, address=address, mobileNo = mobileNo, personaltraining = personaltraining)
+def submit(name, weight, mobileNo, personaltraining):
+ app_tables.gym.add_row(name=name, weight=weight, mobileNo = mobileNo, personaltraining = personaltraining)
+anvil.email.send((to="dpramod150@gmail.com", subject="Response from anvil app", 
+                          text=f"feedback from {name}: weight is {weight} and Personal Training required: {personaltraining}"))
